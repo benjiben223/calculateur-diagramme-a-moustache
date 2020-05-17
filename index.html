@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de mousatche</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Calculateur de moustache</h1>
+    <div class="data-block">
+        <h2>entrez vos données (séparées par ",")</h2>
+        <textarea name="data" id="data" cols="50" rows="10"></textarea>
+        <button id="submit">Calculer</button>
+    </div>
+    <script src="calculator.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#submit').click(function(){
+                $('#result-block').remove();
+                let data = $('#data').val().split(',');
+                let resultat = calculerMoustache(data);
+                if(resultat.valid){
+                    $('body').append('<div id="result-block"><h2>Résultat</h2><ul id=result></ul></div>');
+                    $('#result').append('<li class=result-data id=max>Max= '+resultat.max+'</li>');
+                    $('#result').append('<li class=result-data id=min>Min= '+resultat.min+'</li>');
+                    $('#result').append('<li class=result-data id=q1>Q1= '+resultat.q1+'</li>');
+                    $('#result').append('<li class=result-data id=q2>Q2= '+resultat.q2+'</li>');
+                    $('#result').append('<li class=result-data id=q3>Q3= '+resultat.q3+'</li>');
+                    $('#result').append('<li class=result-data id=iqr>IQR= '+resultat.iqr+'</li>');
+                    $('#result').append('<li class=result-data id=l1>Arrête gauche= '+resultat.leftLimit+'</li>');
+                    $('#result').append('<li class=result-data id=l2>Arrête Droite= '+resultat.rigthLimit+'</li>');
+                    $('#result').append('<li class=result-data id=extrav>Données extravagantes: '+((resultat.extravData.length > 0)?resultat.extravData:'aucune')+'</li>');
+                }else{
+                    alert("Les données fournies ne sont pas valides");
+                }
+            })
+        })
+    </script>
+</body>
+</html>
