@@ -1,5 +1,5 @@
 # Calculateur de diagramme à moustache :man:
-- Applcation créer pour faciliter le calcule des données nécessaires pour un diagramme à moustache (c'est tellement facile que ça le fait pour vous).
+- Appilcation créée pour faciliter le calcule des données nécessaires pour un diagramme à moustache (c'est tellement facile que ça le fait pour vous).
 - Le fichier calculator.js est indépendant et peut donc être utilisé dans d'autres applications (si vous voulez faire votre propre interface).
 - Pas besoin de partir un serveur!!!.
 - Parfait pour les étudiants en statistiques :chart_with_upwards_trend:.
@@ -8,14 +8,14 @@
 Vous n'avez qu'à ouvrir le fichier **index.html** dans votre navigateur préféré (svp pas Explorer :pray:), entrez vos données séparées par "," et clicker sur "calculer" pour que la magie opère!
 
 ## Disclamer
-Je n'ai pas testé en profondeur. Il se peut donc qu'il est des bugs. Je vous invite à ouvrir une issue si c'est le cas. C'est pas une bonne idée de baser une application importante sur ce qui se trouve sur se repo.
+Je n'ai pas testé en profondeur. Il se peut donc qu'il est des bugs. Je vous invite à ouvrir une issue si c'est le cas. C'est pas une bonne idée de baser une application importante sur ce qui se trouve sur ce repo.
 
 ## Changements potentiels
 * Un peu plus de CSS pour rendre ça cute :heart_eyes:.
 * Un canvas HTML qui affiche le diagramme de moustache.
 
 ## Liscencement
-Faites ce que vous voulez avec! Yaaaaay! Mais s'il vous plait, linker ce repo si vous utilisé l'application pour autre chose que l'utilisation personnelle (par exemple si vous donnez un cours).
+Faites ce que vous voulez avec! Yaaaaay! Mais s'il vous plait, linker ce repo si vous utilisez l'application pour autre chose que l'utilisation personnelle (par exemple si vous donnez un cours).
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
