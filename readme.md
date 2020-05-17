@@ -1,5 +1,5 @@
 # Calculateur de diagramme à moustache :man:
-- Appilcation créée pour faciliter le calcule des données nécessaires pour un diagramme à moustache (c'est tellement facile que ça le fait pour vous).
+- Application créée pour faciliter le calcule des données nécessaires pour un diagramme à moustache (c'est tellement facile que ça le fait pour vous).
 - Le fichier calculator.js est indépendant et peut donc être utilisé dans d'autres applications (si vous voulez faire votre propre interface).
 - Pas besoin de partir un serveur!!!.
 - Parfait pour les étudiants en statistiques :chart_with_upwards_trend:.
