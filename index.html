@@ -22,6 +22,10 @@
                 let resultat = calculerMoustache(data);
                 if(resultat.valid){
                     $('body').append('<div id="result-block"><h2>Résultat</h2><ul id=result></ul></div>');
+                    $('#result').append('<li class=result-data id=sorted-data>Données en ordre= '+resultat.sortedData+'</li>');
+                    $('#result').append('<li class=result-data id=average>Moyenne= '+resultat.average+'</li>');
+                    $('#result').append('<li class=result-data id=variance>Variance= '+resultat.variance+'</li>');
+                    $('#result').append('<li class=result-data id=standard-error>Écart-type= '+resultat.standardError+'</li>');
                     $('#result').append('<li class=result-data id=max>Max= '+resultat.max+'</li>');
                     $('#result').append('<li class=result-data id=min>Min= '+resultat.min+'</li>');
                     $('#result').append('<li class=result-data id=q1>Q1= '+resultat.q1+'</li>');
