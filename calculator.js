@@ -5,9 +5,9 @@ function quartile(numQuartile,data){
     });
     let result = percentage*data.length;
     if(!Number.isInteger(result)){
-        return data[Math.ceil(result)-1];
+        return parseInt(data[Math.ceil(result)-1]);
     }
-    return (+data[result-1] + +data[result])/2;
+    return parseInt((+data[result-1] + +data[result])/2);
 }
 
 function iqr(data){
