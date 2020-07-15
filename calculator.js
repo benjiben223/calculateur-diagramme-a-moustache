@@ -58,7 +58,7 @@ function variance(data,average){
 function calculerMoustache(data){
     let result = {};
     if(isValidData(data)){
-        result.sortedData = Array.from(data,x=>parseInt(x)).sort(function(a,b){
+        result.sortedData = Array.from(data,x=>parseFloat(x)).sort(function(a,b){
             return a-b;
         });
         //https://codeburst.io/javascript-arrays-finding-the-minimum-maximum-sum-average-values-f02f1b0ce332
